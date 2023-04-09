@@ -28,7 +28,7 @@ def plot_graph(file_name):
     axs[0, 0].scatter(data["Open"], target)
     axs[0, 0].set_xlabel("Opening Price")
     axs[0, 0].set_ylabel("Price")
-    axs[0, 0].set_title("Opening Price vs Price")
+    axs[0, 0].set_title("Opening Price vs Price", fontsize = 14,fontweight='bold')
 
     axs[0, 1].scatter(data["High"], target)
     axs[0, 1].set_xlabel("Highest Price")
