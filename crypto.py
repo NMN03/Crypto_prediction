@@ -26,7 +26,7 @@ def plot_graph(file_name):
     fig, axs = plt.subplots(2, 2, figsize=(10, 8))
     
     axs[0, 0].scatter(data["Open"], target)
-    plt.plot(X_test, predictions,color='k')
+    plt.plot(X_test["Open"], predictions,color='k')
     axs[0, 0].set_xlabel("Opening Price")
     axs[0, 0].set_ylabel("Price")
     axs[0, 0].set_title("Opening Price vs Price", fontsize = 10,fontweight='bold')
