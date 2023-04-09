@@ -28,22 +28,22 @@ def plot_graph(file_name):
     axs[0, 0].scatter(data["Open"], target)
     axs[0, 0].set_xlabel("Opening Price")
     axs[0, 0].set_ylabel("Price")
-    axs[0, 0].set_title("Opening Price vs Price", fontsize = 14,fontweight='bold')
+    axs[0, 0].set_title("Opening Price vs Price", fontsize = 10,fontweight='bold')
 
     axs[0, 1].scatter(data["High"], target)
     axs[0, 1].set_xlabel("Highest Price")
     axs[0, 1].set_ylabel("Price")
-    axs[0, 1].set_title("Highest Price vs Price")
+    axs[0, 1].set_title("Highest Price vs Price", fontsize = 10,fontweight='bold')
 
     axs[1, 0].scatter(data["Low"], target)
     axs[1, 0].set_xlabel("Lowest Price")
     axs[1, 0].set_ylabel("Price")
-    axs[1, 0].set_title("Lowest Price vs Price")
+    axs[1, 0].set_title("Lowest Price vs Price", fontsize = 10,fontweight='bold')
 
     axs[1, 1].scatter(data["Volume"], target)
     axs[1, 1].set_xlabel("Trading Volume")
     axs[1, 1].set_ylabel("Price")
-    axs[1, 1].set_title("Trading Volume vs Price")
+    axs[1, 1].set_title("Trading Volume vs Price", fontsize = 10,fontweight='bold')
 
     # difference in market volume vs predicted market volume
     plt.figure(figsize=(8, 6))
