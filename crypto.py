@@ -23,7 +23,7 @@ def plot_graph(file_name):
     predictions = model.predict(X_test)
 
     # Plot the data to visualize the trends
-    fig, axs = plt.subplots(2, 2, figsize=(10, 8))
+    fig, axs = plt.subplots(3, 3, figsize=(10, 8))
     
     axs[0, 0].scatter(data["Open"], target)
     axs[0, 0].set_xlabel("Opening Price")
